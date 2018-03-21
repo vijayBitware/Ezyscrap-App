@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_colour"
+    tools:context="com.ezyscrap.View.Fragments.BuyerRequestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- TODO: Update blank fragment layout -->
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight=".1"
+            android:background="@color/blue">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_backarrow" />
+
+         scrapappappcrap.fonts.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Confirm Bid"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight=".2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="15dp"
+            android:layout_weight=".4"
+            android:orientation="vertical">
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Total Bid Amount"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.ezyscrap.fonts.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="₹"
+                    android:textColor="@color/blue"
+                    android:textSize="25sp" />
+
+                <com.ezyscrap.fonts.BoldTextViewNumber
+                    android:id="@+id/tvTotalAmnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="65000"
+                    android:textColor="@color/blue"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Amount will charged from your wallet"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.ezyscrap.fonts.BoldTextView
+            android:id="@+id/tvConfirmBid"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight=".1"
+            android:background="@drawable/rounded_btn_green"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="CONFIRM BID"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <!--<ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:src="@drawable/icon_backarrow"
+            android:layout_marginLeft="10dp"/>-->
+        <com.ezyscrap.fonts.RegularTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="Payment"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <com.ezyscrap.fonts.RegularTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Total Amount To Be Paid"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"/>
+                <com.ezyscrap.fonts.BoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="₹2000.00"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:id="@+id/txt_totalAmount"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey"
+                android:layout_marginTop="10dp"/>
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Debit Card"
+                android:textSize="18sp"
+                android:background="@color/card_bg"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_debitCard"/>
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_debitCard"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1">
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:background="@color/white"
+                        android:hint="Enter your card number "
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_debitCardNumber"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.080dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1">
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@color/white"
+                        android:hint="Enter Expiry Date"
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_debitCardExpiry"/>
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/white"
+                        android:hint="Enter CVV"
+                        android:inputType="number"
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_debitCardCVV"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.080dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".5"
+                        android:background="@color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.080dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".5"
+                        android:background="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp">
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:background="@color/white"
+                        android:hint="Enter Account Holder Name "
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_debitCardAccountHolderName"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.080dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/black"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Credit Card"
+                android:textSize="18sp"
+                android:background="@color/card_bg"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_creditCard"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_creditCard"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1">
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:background="@color/white"
+                        android:hint="Enter your card number "
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_creditCardNumber"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.080dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1">
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@color/white"
+                        android:hint="Enter Expiry Date"
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_creditCardExpiry"/>
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/white"
+                        android:hint="Enter CVV"
+                        android:inputType="number"
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_crediCardCVV"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.080dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".5"
+                        android:background="@color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.080dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".5"
+                        android:background="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp">
+
+                    <com.ezyscrap.fonts.RegularEditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:background="@color/white"
+                        android:hint="Enter Account Holder Name "
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:id="@+id/edt_crediCardAccountHolderName"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.080dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/black"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Net Banking"
+                android:textSize="18sp"
+                android:background="@color/card_bg"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_netBanking"/>
+
+            <com.ezyscrap.fonts.BoldButton
+                android:id="@+id/btnProceedToPayment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/rounded_btn_green"
+                android:text="Proceed To Payment"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

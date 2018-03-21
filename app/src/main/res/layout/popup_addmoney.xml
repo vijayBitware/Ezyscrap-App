@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/imgCancel"
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_close" />
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Your Wallet Has Insufficient Balance"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="To Place This Bid"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Please Add Money To The Wallet"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:id="@+id/txtminAmnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_colour_grey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/linearAddMoney"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_green"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25" />
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="22dip"
+                    android:layout_gravity="center"
+                    android:layout_weight=".15"
+                    android:src="@drawable/icon_add" />
+
+                <com.ezyscrap.fonts.RegularTextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".55"
+                    android:text="ADD MONEY"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

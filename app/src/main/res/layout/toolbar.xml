@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:id="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="0dip"
+            android:layout_height="29dip"
+            android:layout_gravity="center"
+            android:layout_weight=".08"
+            android:src="@drawable/icon_backarrow" />
+
+        <com.ezyscrap.fonts.RegularTextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtHeading"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".75"
+            android:text="Latest Requests"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".14">
+
+            <ImageView
+                android:id="@+id/imgNotification"
+                android:layout_width="39dip"
+                android:layout_height="29dip"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_notefication" />
+
+            <RelativeLayout
+                android:layout_marginLeft="5dp"
+                android:id="@+id/relativeNotCnt"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_count">
+
+                <TextView
+                    android:id="@+id/txtNotCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:text="2" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

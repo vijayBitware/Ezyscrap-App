@@ -1,0 +1,229 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_colour"
+    tools:context="com.ezyscrap.View.Fragments.BuyerRequestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- TODO: Update blank fragment layout -->
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dip"
+             android:layout_weight=".1"
+             android:background="@color/blue">
+
+             <ImageView
+                 android:id="@+id/imgBack"
+                 android:layout_width="25dip"
+                 android:layout_height="25dip"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="10dp"
+                 android:src="@drawable/icon_backarrow" />
+
+          scrapappappcrap.fonts.RegularTextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="10dp"
+                 android:text="Scrap Request Details"
+                 android:textColor="@color/white"
+                 android:textSize="20sp" />
+         </LinearLayout>
+ -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <me.crosswall.lib.coverflow.core.PagerContainer
+                        android:id="@+id/pager_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="9.5">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/overlap_pager"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:elevation="10dp" />
+                    </me.crosswall.lib.coverflow.core.PagerContainer>
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="bottom"
+                        android:padding="10dip"
+                        app:centered="true"
+                        app:fillColor="@color/blue"
+                        app:snap="false" />
+                </LinearLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/imgScrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_interest" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <com.ezyscrap.fonts.RegularTextView
+                        android:id="@+id/txtOrderNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#ORD1234"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <com.ezyscrap.fonts.RegularTextView
+                        android:id="@+id/txtScrapType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Industrial waste"
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="15sp" />
+
+                    <com.ezyscrap.fonts.RegularTextView
+                        android:id="@+id/txtDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="hfhs bshf fshbfhshf bf"
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="900kg - 1000kg"
+                        android:textColor="@color/text_colour_grey"
+                        android:textSize="17sp" />
+
+                    <com.ezyscrap.fonts.RegularTextView
+                        android:id="@+id/txtHdAmnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Minimum Amount For Bid Per kg"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <com.ezyscrap.fonts.RegularTextView
+                            android:id="@+id/txtMinAmnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="hfhs bshf fshbfhshf bf"
+                            android:textColor="@color/text_colour_grey"
+                            android:textSize="15sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:id="@+id/linearBidAmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:visibility="gone">
+
+                        <com.ezyscrap.fonts.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:gravity="center"
+                            android:text="Bidding Amount :  "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <com.ezyscrap.fonts.RegularTextView
+                            android:id="@+id/txtBidAmnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:gravity="center"
+                            android:text="hfhs bshf fshbfhshf bf"
+                            android:textColor="@color/text_colour_grey"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.ezyscrap.fonts.BoldButton
+                            android:id="@+id/tvBid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rounded_btn_green"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="BID"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <com.ezyscrap.fonts.BoldButton
+                            android:id="@+id/tvInterest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/rounded_btn_green"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Interest"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

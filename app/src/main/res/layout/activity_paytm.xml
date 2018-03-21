@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight=".1"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="29dip"
+                android:layout_height="29dip"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_backarrow" />
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Proceed To Checkout"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight=".4"
+            android:orientation="horizontal">
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:id="@+id/txtHd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Fee : "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.ezyscrap.fonts.RegularTextView
+                android:id="@+id/txtFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <com.ezyscrap.fonts.BoldButton
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="20dp"
+            android:layout_weight=".1"
+            android:background="@drawable/btn_green"
+            android:text="Pay Now"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

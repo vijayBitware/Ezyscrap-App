@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <com.ezyscrap.fonts.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="What type of scrap do you have?"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rounded_rectangle">
+
+                    <Spinner
+                        android:id="@+id/spn_scrapType"
+                        style="@style/SpinnerwithNoArrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="8.5"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:spinnerMode="dialog"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/spn_scrapType"
+                        android:layout_alignEnd="@+id/spn_scrapType"
+                        android:layout_alignRight="@+id/spn_scrapType"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:paddingLeft="35dp"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+
+                <com.ezyscrap.fonts.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Scrap Description"
+                    android:textSize="18sp" />
+
+                <com.ezyscrap.fonts.RegularEditText
+                    android:id="@+id/edt_scrapDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rounded_rectangle"
+                    android:gravity="top"
+                    android:padding="5dp" />
+
+                <com.ezyscrap.fonts.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="How much scrap you have?"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rounded_rectangle"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:id="@+id/edt_scrapAmout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:backgroundTint="@color/white"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <Spinner
+                            android:id="@+id/spn_units"
+                            style="@style/SpinnerwithNoArrow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:layout_weight="3.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/spn_units"
+                            android:layout_alignRight="@+id/spn_units"
+                            android:layout_alignTop="@+id/spn_units"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingLeft="35dp"
+                            android:src="@drawable/down_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.ezyscrap.fonts.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Upload your scrap photo"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/ivImgView1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cam_holder" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1" />
+
+                    <ImageView
+                        android:id="@+id/ivImgView2"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cam_holder"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearImgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/ivImgView3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cam_holder"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1" />
+
+                    <ImageView
+                        android:id="@+id/ivImgView4"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".4"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cam_holder"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.ezyscrap.fonts.RegularButton
+                    android:id="@+id/btn_uploadScrapPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_btn"
+                    android:text="Upload your scrap photo"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_scrapPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="gone" />
+
+                <com.ezyscrap.fonts.BoldButton
+                    android:id="@+id/txt_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_btn_green"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

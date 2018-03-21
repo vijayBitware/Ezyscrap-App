@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ezyscrap</string>
+    <string name="new_user_titile">Don\'t have an account ? Register</string>
+    <string name="no_internet">Internet Connection.</string>
+    <string name="rupee">₹</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_record">No Records Found</string>
+    <string name="app_title">Ezyscrap</string>
+    <string name="title_activity_invoice">InvoiceActivity</string>
+    <string name="title_activity_paytm">PaytmActivity</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="privacy"><![CDATA[Privacy & Policies]]></string>
+</resources>

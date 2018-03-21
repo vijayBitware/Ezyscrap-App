@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1092334444194",
+    "firebase_url": "https://ezyscrap.firebaseio.com",
+    "project_id": "ezyscrap",
+    "storage_bucket": "ezyscrap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092334444194:android:dacc0f74430f430c",
+        "android_client_info": {
+          "package_name": "com.ezyscrap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092334444194-csfjs7k2t1ps850c4lis8sdkf0172si9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAa_Wp66Ls1kvsQZP3602cKetOcB3I2T4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
